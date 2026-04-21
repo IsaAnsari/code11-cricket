@@ -47,49 +47,42 @@ Aap meri live project site yahan dekh sakte hain:
 
 ```text
 code11-cricket/
-├── img/                # Player images, icons, aur logos
-├── index.html          # Entry point (Landing Page)
-├── challenges.html     # Coding challenges solving area
-├── available-cards.html# Total cards library
-├── collection.html     # User ka personal unlocked deck
-├── profile.html        # User statistics aur progress
-└── style.css           # Global custom styling
+├── img/                  # Player images, icons, aur logos
+├── index.html            # Entry point (Landing Page)
+├── challenges.html       # Coding challenges solving area
+├── available-cards.html  # Total cards library
+├── collection.html       # User ka personal unlocked deck
+├── profile.html          # User statistics aur progress
+└── style.css             # Global custom styling
 ```
 
-🎮 How to Play
+## 🎮 How to Play
 Enter the Game: Landing page par "Start Coding" par click karein.
 
-Solve Puzzles: Challenges section mein jayein aur logic-based questions solve karein.
+- Solve Puzzles: Challenges section mein jayein aur logic-based questions solve karein.
 
-Unlock Legends: Har success par aapko cards milenge. Legendary players ke liye hard challenges solve karne honge!
+- Unlock Legends: Har success par aapko cards milenge. Legendary players ke liye hard challenges solve karne honge!
 
-View Stats: Apne collection mein har player ki detail aur ratings check karein.
+- View Stats: Apne collection mein har player ki detail aur ratings check karein.
 
-🔧 Installation & Local Setup
+## 🔧 Installation & Local Setup
 Agar aap ise apne local machine par chalana chahte hain:
 
-Repository clone karein:
-
-Bash
+- Repository clone karein:
+```
 git clone [https://github.com/IsaAnsari/code11-cricket.git](https://github.com/IsaAnsari/code11-cricket.git)
-Project folder mein jayein:
-
-Bash
+```
+- Project folder mein jayein:
+```
 cd code11-cricket
+```
 index.html ko browser mein open karein (Ya VS Code ka Live Server use karein).
 
-🤝 Contributing
-Contributions are welcome!
-
-Naye coding challenges add karne ke liye PR open karein.
-
-Naye legendary players ke card designs suggest karein.
-
-👤 Author
+## 👤 Author
 Isa Ansari
 
-GitHub: @IsaAnsari
+GitHub: [@IsaAnsari](https://github.com/IsaAnsari/)
 
-Portfolio: [Apna Portfolio Link Yahan Dalein]
+Portfolio: [IsaFolio](https://isafolio.netlify.app/)
 
 Developed with ❤️ for Cricket & Coding.
