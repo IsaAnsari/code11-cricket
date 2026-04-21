@@ -26,7 +26,7 @@ Aap meri live project site yahan dekh sakte hain:
 
 | Landing Page | Challenge Dashboard |
 | :---: | :---: |
-| ![Home Page](img/logo_02.png) | ![Challenges](https://via.placeholder.com/400x250?text=Challenge+Screen+Screenshot) |
+| ![Home Page](img/c11c_landing_page.png) | ![Challenges](img/c11c_challenges_page.png) |
 
 | Collection Vault | Player Card View |
 | :---: | :---: |
