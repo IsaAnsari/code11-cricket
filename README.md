@@ -30,7 +30,7 @@ Aap meri live project site yahan dekh sakte hain:
 
 | Collection Vault | Player Card View |
 | :---: | :---: |
-| ![Collection](https://via.placeholder.com/400x250?text=Collection+Vault+Screenshot) | ![Card View](https://via.placeholder.com/400x250?text=Player+Card+Stats+Screenshot) |
+| ![Collection](img/c11c_mycards_page.png) | ![Card View](img/card_template.png) |
 
 ---
 
