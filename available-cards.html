@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo_02.png" type="image/x-icon">
+    <title>Available Cards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="navbar-brand">
+            <img onclick="goHome()" class="logo-badge" src="img/logo_02.png" alt="">
+            <h2 onclick="goHome()" style="cursor: pointer;">CODE11 CRICKET</h2>
+        </div>
+        <nav class="navbar-nav">
+            <a href="challenges.html" class="nav-btn">
+                <span>⚡</span> Challenges
+            </a>
+            <a href="collection.html" class="nav-btn">
+                <span>🎴</span> My Cards
+            </a>
+            <a href="available-cards.html" class="nav-btn active">
+                <span>📚</span> Available Cards
+            </a>
+            <a href="profile.html" class="nav-btn">
+                <span>👤</span> Profile
+            </a>
+        </nav>
+    </header>
+
+    <main class="collection-container">
+        <section class="collection-header">
+            <div>
+                <h1>📚 Available Cards</h1>
+                <p>Cards you haven't unlocked yet. Solve challenges to unlock them!</p>
+                <div class="collection-summary">
+                    <div>
+                        <span id="available-count">0</span>
+                        <small>Available Cards</small>
+                    </div>
+                    <div>
+                        <span id="available-common-count">0</span>
+                        <small>Common</small>
+                    </div>
+                    <div>
+                        <span id="available-rare-count">0</span>
+                        <small>Rare</small>
+                    </div>
+                    <div>
+                        <span id="available-epic-count">0</span>
+                        <small>Epic</small>
+                    </div>
+                    <div>
+                        <span id="available-legendary-count">0</span>
+                        <small>Legendary</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="available-grid" class="available-cards-grid"></section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

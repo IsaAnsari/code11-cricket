@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo_02.png" type="image/x-icon">
+    <title>My Cards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="navbar-brand">
+            <img onclick="goHome()" class="logo-badge" src="img/logo_02.png" alt="">
+            <h2 onclick="goHome()" style="cursor: pointer;">CODE11 CRICKET</h2>
+        </div>
+        <nav class="navbar-nav">
+            <a href="challenges.html" class="nav-btn">
+                <span>⚡</span> Challenges
+            </a>
+            <a href="collection.html" class="nav-btn active">
+                <span>🎴</span> My Cards
+            </a>
+            <a href="available-cards.html" class="nav-btn">
+                <span>📚</span> Available Cards
+            </a>
+            <a href="profile.html" class="nav-btn">
+                <span>👤</span> Profile
+            </a>
+        </nav>
+    </header>
+
+    <main class="collection-container">
+        <section class="collection-header">
+            <div>
+                <h1>🎴 Card Vault</h1>
+                <p>Browse your collection with the same energy as the preview cards. Every card is a reward from
+                    challenges and matches your deck aesthetic.</p>
+                <div class="collection-summary">
+                    <div>
+                        <span id="owned-count">0</span>
+                        <small>Owned Cards</small>
+                    </div>
+                    <div>
+                        <span id="common-count">0</span>
+                        <small>Common Cards</small>
+                    </div>
+                    <div>
+                        <span id="rare-count">0</span>
+                        <small>Rare Cards</small>
+                    </div>
+                    <div>
+                        <span id="epic-count">0</span>
+                        <small>Epic Cards</small>
+                    </div>
+                    <div>
+                        <span id="legendary-count">0</span>
+                        <small>Legendary Cards</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="card-collection" class="collection-grid"></section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

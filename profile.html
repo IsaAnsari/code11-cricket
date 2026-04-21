@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo_02.png" type="image/x-icon">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="navbar-brand">
+            <img onclick="goHome()" class="logo-badge" src="img/logo_02.png" alt="">
+            <h2 onclick="goHome()" style="cursor: pointer;">CODE11 CRICKET</h2>
+        </div>
+        <nav class="navbar-nav">
+            <a href="challenges.html" class="nav-btn">
+                <span>⚡</span> Challenges
+            </a>
+            <a href="collection.html" class="nav-btn">
+                <span>🎴</span> My Cards
+            </a>
+            <a href="available-cards.html" class="nav-btn">
+                <span>📚</span> Available Cards
+            </a>
+            <a href="profile.html" class="nav-btn active">
+                <span>👤</span> Profile
+            </a>
+        </nav>
+    </header>
+
+    <section class="profile-container">
+        <!-- Profile Header -->
+        <div class="profile-header">
+            <div class="profile-avatar">👾</div>
+            <div class="profile-info">
+                <h1 id="profile-name">Player Name</h1>
+                <p class="profile-title">Code Master & Cricket Collector</p>
+                <p class="profile-joined">Joined Recently</p>
+            </div>
+        </div>
+
+        <!-- Main Stats Grid -->
+        <div class="profile-stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon">⭐</div>
+                <div class="stat-value" id="profile-level">1</div>
+                <div class="stat-label">Level</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">⚡</div>
+                <div class="stat-value" id="profile-xp">0</div>
+                <div class="stat-label">XP Points</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🎴</div>
+                <div class="stat-value" id="profile-cards">0</div>
+                <div class="stat-label">Cards</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🏆</div>
+                <div class="stat-value" id="profile-streak">0</div>
+                <div class="stat-label">Streak</div>
+            </div>
+        </div>
+
+        <!-- Level Progression Bar -->
+        <div class="level-section">
+            <h3>Level Progress</h3>
+            <div class="level-bar-container">
+                <div class="level-bar" id="level-bar"></div>
+            </div>
+            <p class="level-text" id="level-text">0 / 100 XP to next level</p>
+        </div>
+
+        <!-- Two Column Layout -->
+        <div class="profile-content-grid">
+            <!-- Left Column: Achievements -->
+            <div class="profile-section">
+                <h3>🏅 Achievements</h3>
+                <div class="achievements-grid">
+                    <div class="achievement common" title="First Steps">
+                        <div>🎯</div>
+                        <span>First Steps</span>
+                    </div>
+                    <div class="achievement rare" title="Code Champion">
+                        <div>🥇</div>
+                        <span>Champion</span>
+                    </div>
+                    <div class="achievement epic" title="Collector Master">
+                        <div>🎴</div>
+                        <span>Collector</span>
+                    </div>
+                    <div class="achievement legendary" title="Legendary Player">
+                        <div>👑</div>
+                        <span>Legendary</span>
+                    </div>
+                    <div class="achievement locked" title="Locked">
+                        <div>🔒</div>
+                        <span>Locked</span>
+                    </div>
+                    <div class="achievement locked" title="Locked">
+                        <div>🔒</div>
+                        <span>Locked</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Stats & Info -->
+            <div class="profile-section">
+                <h3>📊 Statistics</h3>
+                <div class="stats-details">
+                    <div class="stat-detail">
+                        <label>Challenges Completed:</label>
+                        <span id="challenges-completed">0</span>
+                    </div>
+                    <div class="stat-detail">
+                        <label>Accuracy Rate:</label>
+                        <span id="accuracy-rate">0%</span>
+                    </div>
+                    <div class="stat-detail">
+                        <label>Favorite Language:</label>
+                        <span id="favorite-lang">JavaScript</span>
+                    </div>
+                    <div class="stat-detail">
+                        <label>Total Playtime:</label>
+                        <span id="playtime">0h</span>
+                    </div>
+                    <div class="stat-detail">
+                        <label>Best Streak:</label>
+                        <span id="best-streak">0</span>
+                    </div>
+                    <div class="stat-detail">
+                        <label>Rank:</label>
+                        <span id="rank">#999</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent Activity -->
+        <div class="profile-section full-width">
+            <h3>📝 Recent Activity</h3>
+            <div class="activity-feed">
+                <div class="activity-item">
+                    <span class="activity-icon">✅</span>
+                    <div class="activity-text">
+                        <p>Completed challenge "Array Methods"</p>
+                        <time>2 hours ago</time>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-icon">🎴</span>
+                    <div class="activity-text">
+                        <p>Unlocked Epic card "Python Snake"</p>
+                        <time>5 hours ago</time>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-icon">⭐</span>
+                    <div class="activity-text">
+                        <p>Leveled up to Level 5</p>
+                        <time>1 day ago</time>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-icon">🏆</span>
+                    <div class="activity-text">
+                        <p>Earned 5-challenge winning streak</p>
+                        <time>2 days ago</time>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills/Languages -->
+        <div class="profile-section full-width skills">
+            <h3>💻 Programming Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-name">JavaScript</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Python</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Java</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 60%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Restart Game Section -->
+        <div class="profile-section full-width reset">
+            <h3>🔄 Game Reset</h3>
+            <p style="color: #94a3b8; margin-bottom: 20px;">Reset your entire progress and start fresh. This will clear
+                all challenges, cards, levels, and stats.</p>
+            <button id="restart-btn" class="btn-restart">
+                <span>🔄</span> Restart Game
+            </button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

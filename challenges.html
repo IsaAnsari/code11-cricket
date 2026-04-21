@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo_02.png" type="image/x-icon">
+    <title>Challenges</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="navbar-brand">
+            <img onclick="goHome()" class="logo-badge" src="img/logo_02.png" alt="">
+            <h2 onclick="goHome()" style="cursor: pointer;">CODE11 CRICKET</h2>
+        </div>
+        <nav class="navbar-nav">
+            <a href="challenges.html" class="nav-btn active">
+                <span>⚡</span> Challenges
+            </a>
+            <a href="collection.html" class="nav-btn">
+                <span>🎴</span> My Cards
+            </a>
+            <a href="available-cards.html" class="nav-btn">
+                <span>📚</span> Available Cards
+            </a>
+            <a href="profile.html" class="nav-btn">
+                <span>👤</span> Profile
+            </a>
+        </nav>
+    </header>
+
+    <section class="challenge-hero">
+        <div class="hero-copy">
+            <span class="hero-badge">Challenge Arena</span>
+            <h1>Win cards by solving high-impact coding puzzles.</h1>
+            <p>Step into the Code11 arena, tackle challenges, and watch your cricket collection grow with every victory.
+            </p>
+        </div>
+        <div class="hero-wins">
+            <div>
+                <strong>110+</strong>
+                <span>Challenges</span>
+            </div>
+            <div>
+                <strong>4</strong>
+                <span>Card Tiers</span>
+            </div>
+            <div>
+                <strong>100%</strong>
+                <span>Reward Rate</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="challenges-container">
+        <aside class="challenges-left">
+            <div class="challenge-panel">
+                <div>
+                    <h2>Available Challenges</h2>
+                    <p>Choose a challenge to unlock cards and earn XP.</p>
+                </div>
+            </div>
+            <div class="challenge-list" id="challenge-list"></div>
+        </aside>
+        <aside class="challenges-right">
+            <div id="challenge-box" class="hidden challenge-details">
+                <div class="challenge-detail-header">
+                    <p class="detail-chip">Active Challenge</p>
+                    <h3 id="challenge-title"></h3>
+                </div>
+                <p id="challenge-desc" class="detail-desc"></p>
+                <div class="detail-meta">
+                    <p>💻 Write your code below:</p>
+                </div>
+                <textarea id="code-input"></textarea>
+                <button onclick="submitCode()">Submit Answer</button>
+            </div>
+            <div id="challenge-placeholder" class="challenge-details placeholder-box">
+                <h3>Pick a challenge</h3>
+                <p>Open any challenge from the left to see the description and start coding.</p>
+            </div>
+        </aside>
+    </div>
+
+    <div id="card-popup" class="hidden">
+        <div class="card">
+            <div id="card-inner">
+                <div class="card-front">
+                    <h2>New Card!</h2>
+                    <p>Click the button to reveal your reward.</p>
+                    <button id="reveal-card-btn" class="reveal-btn">Reveal Card</button>
+                </div>
+                <div class="card-back">
+                    <img id="card-img" src="" alt="card image">
+                    <h3 id="card-name"></h3>
+                    <div id="card-type" class="card-type"></div>
+                    <p id="card-rating"></p>
+                    <p id="card-role"></p>
+                    <p id="card-country"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
