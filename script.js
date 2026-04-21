@@ -174,7 +174,7 @@ const players = [
         role: "Batsman",
         country: "England",
         type: "legendary",
-        img: "img/alastair_cook.png",
+        img: "img/alastair_Cook.png",
         desc: "England's finest opener. Master of grit and long-innings."
     },
     {
